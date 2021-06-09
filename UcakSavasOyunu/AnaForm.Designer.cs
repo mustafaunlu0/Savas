@@ -103,6 +103,7 @@ namespace UcakSavasOyunu
             this.Name = "AnaForm";
             this.Text = "Uçak Savaş Oyunu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AnaForm_KeyDown);
             this.bilgiPanel.ResumeLayout(false);
             this.bilgiPanel.PerformLayout();
             this.ResumeLayout(false);
