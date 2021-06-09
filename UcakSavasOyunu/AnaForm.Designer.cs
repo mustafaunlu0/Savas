@@ -29,12 +29,14 @@ namespace UcakSavasOyunu
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.bilgiPanel = new System.Windows.Forms.Panel();
             this.ucaksavarPanel = new System.Windows.Forms.Panel();
             this.savasAlaniPanel = new System.Windows.Forms.Panel();
             this.bilgiLabel = new System.Windows.Forms.Label();
             this.sureLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bilgiPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,6 +119,7 @@ namespace UcakSavasOyunu
         private System.Windows.Forms.Label bilgiLabel;
         private System.Windows.Forms.Panel ucaksavarPanel;
         private System.Windows.Forms.Panel savasAlaniPanel;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

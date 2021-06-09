@@ -19,6 +19,7 @@ namespace UcakSavasOyunu
         public AnaForm()
         {
             InitializeComponent();
+            _oyun.GecenSureDegisti += Oyun_GecenSureDegisti;
         }
 
         private void AnaForm_KeyDown(object sender, KeyEventArgs e)
@@ -38,6 +39,10 @@ namespace UcakSavasOyunu
                     _oyun.AtesEt();
                     break;
             }
+        }
+        private void Oyun_GecenSureDegisti(object sender, EventArgs e)
+        {
+            sureLabel.Text = _oyun.GecenSure.ToString(@"m\:ss");
         }
     }
 }
